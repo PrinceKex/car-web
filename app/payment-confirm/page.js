@@ -11,7 +11,7 @@ export default function PaymentConfirmation() {
     h-screen
     items-center justify-center flex-col'
   >
-   <h2 className='text-[30px] z-20 mt-[-30px]'>Payment Confimed</h2>
+   <h2 className='text-[30px] z-20 mt-[-30px]'>Payment Confirmed</h2>
    <Image
     src='/uberconfirm.gif'
     width={500}

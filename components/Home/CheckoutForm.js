@@ -29,7 +29,7 @@ function CheckoutForm({ amount }) {
    clientSecret: secretKey,
    elements,
    confirmParams: {
-    return_url: 'http://localhost:3000/payment-confirm',
+    return_url: 'https://car-web-in3s.vercel.app/payment-confirm',
    },
   })
  }
