@@ -39,7 +39,7 @@ function SearchSection() {
      Search
     </button>
    </div>
-   {distance ? <CarListOptions distance={distance} /> : null}
+   {<CarListOptions distance={distance} />}
   </div>
  )
 }
