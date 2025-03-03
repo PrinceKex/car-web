@@ -1,8 +1,10 @@
 import localFont from 'next/font/local'
 import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
-import Header from '@/components/Header'
+import Header from '../components/Header'
 import { Inter, Montserrat } from 'next/font/google'
+import Loading from './loading'
+import { Suspense } from 'react'
 
 const montserrat = Montserrat({
  subsets: ['latin'],
@@ -32,7 +34,7 @@ export default function RootLayout({ children }) {
    <html lang='en'>
     <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
      <Header />
-     {children}
+     <Suspense fallback={<Loading />}>{children}</Suspense>
     </body>
    </html>
   </ClerkProvider>
