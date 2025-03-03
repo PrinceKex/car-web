@@ -2,6 +2,13 @@ import localFont from 'next/font/local'
 import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
 import Header from '@/components/Header'
+import { Inter, Montserrat } from 'next/font/google'
+
+const montserrat = Montserrat({
+ subsets: ['latin'],
+ variable: '--font-montserrat',
+ weight: ['100', '200', '800', '900'],
+})
 
 const geistSans = localFont({
  src: './fonts/GeistVF.woff',

@@ -1,3 +1,4 @@
-import { createContext } from "react";
+'use client'
+import { createContext } from 'react'
 
-export const DestinationContext=createContext();
+export const DestinationContext = createContext()
