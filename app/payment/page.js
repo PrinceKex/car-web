@@ -2,10 +2,10 @@
 import { Elements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
 import { useSearchParams } from 'next/navigation'
-import CheckoutForm from './../../components/Home/CheckoutForm'
+import CheckoutForm from '../../components/Home/CheckoutForm'
 import React from 'react'
 
-function Payment() {
+export default function Payment() {
  const searchParam = useSearchParams()
  const amount = searchParam.get('amount')
 
@@ -21,5 +21,3 @@ function Payment() {
   </Elements>
  )
 }
-
-export default Payment

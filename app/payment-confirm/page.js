@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-function PaymentConfirmation() {
+export default function PaymentConfirmation() {
  const route = useRouter()
  return (
   <div
@@ -34,5 +34,3 @@ function PaymentConfirmation() {
   </div>
  )
 }
-
-export default PaymentConfirmation
